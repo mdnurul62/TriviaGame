@@ -1,0 +1,74 @@
+html {
+	background: url(../images/birds.jpeg) no-repeat center center fixed;
+	background-size: cover;
+	-web-kit-background-size: cover;
+	-moz-background-size: cover;
+	-0-background-size: cover;
+}
+
+body {
+	font-family: Helvetica, sans-serif, arial;
+	
+}
+
+.container {
+	width: 680px;
+	height: auto;
+	position: absolute;
+	margin-left: 300px ;
+	margin-top: 50px;
+	padding: 20px;
+	border: 1px solid black;
+	box-shadow: 0 0 10px 4px #fff;
+	background: #222;
+}
+
+.title {
+	padding-top: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+}
+
+.start {
+	text-align: center;
+	padding: 10px;
+	font-size: 16px;
+	text-transform: uppercase;
+	background: black;
+	color: white;
+	border-radius: 5px;
+	margin-left: 300px;
+}
+.start:hover {
+	background: #333;
+	color: tomato;
+}
+
+.timeRemaining {
+	text-align: center;
+	padding: 10px;
+	text-transform: uppercase;
+	color: white;
+}
+
+#test, #test_status {
+	padding: 10px;
+	font-size: 14px;
+	background: rgba(255,0,0,0.6);
+	border-radius: 20px;
+	margin: 10px 0 10px 0;
+	color: white;
+}
+
+
+.nextQuestion {
+	width: 135px;
+	padding: 10px 0 10px 15px;
+	vertical-align: middle;
+	background: #333;
+	margin: 30px 0 20px 265px;
+	color: white;
+	border-radius: 20px;
+	float: right;
+}
