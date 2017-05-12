@@ -16,8 +16,7 @@ $(document).ready(function() {
 	
 	var time = 15;
 	var intervalId;
-	//$("#start").on("click", run);
-
+//Start time and rendering question by clicking a button
 	function run() {
 		intervalId = setInterval(decrement, 1000);
 		renderQuestion();
@@ -35,7 +34,6 @@ $(document).ready(function() {
 	//variables for rendering question.
 
 	var questions;
-	//var start = false;
 	//questions refer to questions array which contains another array inside it 
 	//that contains question, 4 choices and correct answer.
 	var position = 0;//array index for main array.
@@ -63,14 +61,12 @@ $(document).ready(function() {
 			$(".nextQuestion").hide();
 
 		//to stop execution further
-			//quizOver();
-		//position = 0;
-		//correctAnswer = 0;
 		return false;
 		} 
 
 
 		$("#questionNumber").html("Question " + (position + 1) + " of " + questions.length);
+	
 	//[position] refers to array index of multi dimensional array and [0] refers to first element of inner array.
 	//To capture an element of multi dimentional array, uses the following variables:
 		question = questions[position][0];
@@ -78,6 +74,7 @@ $(document).ready(function() {
 		choice2  = questions[position][2];
 		choice3  = questions[position][3];
 		choice4  = questions[position][4];
+	
 	//populating in div with id test of html page with the following elements:
 		$("#test").html("<h3>" + question + "</h3>" + "<br>"
 			+ "<input type='radio' name='choices' value='1'>" + choice1 + "<br>"
@@ -103,18 +100,7 @@ $(document).ready(function() {
 		position++;
 		renderQuestion();
 	}
-/*
-	function quizOver() {
-		if (time === 0) {
-			position = 0;
-			correctAnswer = 0;
-			return false;
-		$(".nextQuestion").unbind('click');
-		$(".nextQuestion").text("Click for result")
-		}
-	}
-*/
-//window.addEventListener("load",run, false);
+
 	
 	var questions = [
 			[   "To avoid a collision, a driver must maintain at least ------ following distance for each 10 mph of speed?","one car length", "two car length", "three car length", "four car length", "1"], 
