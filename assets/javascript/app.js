@@ -11,10 +11,11 @@
 
 $(document).ready(function() {
 	$("#start").on("click", run);
+
 });
 
-	
-	var time = 15;
+
+var time = 15;
 	var intervalId;
 //Start time and rendering question by clicking a button
 	function run() {
@@ -107,5 +108,7 @@ $(document).ready(function() {
 			[	"When driving at night in a heavy fog, driver must use?", "high-beam headlights.", "flashing lights.", "low-beam headlights.", "parking lights.", "3"], 
 			[   "No-Zone refers to?", "speed zones on highways.", "work zones on freeways.", "blind spots around trucks.", "free parking zones.", "3"], 
 			[   "When making a left turn at a controlled intersection, driver must yield to?", "vehicles on the right.", "traffic behind.", "vehicles turning right.", "oncoming traffic.", "4"],
-			[	"Alcohol causes?", "poor judgment", "slower judgment", "loss of concentration", "all of the these", ""]
+			[	"Alcohol causes?", "poor judgment.", "slower judgment.", "loss of concentration.", "all of the above.", "4"]
 			];
+
+	
